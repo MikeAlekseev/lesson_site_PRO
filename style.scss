@@ -127,6 +127,7 @@ li {
     top: 80px;
     display: none;
     position: absolute;
+    z-index: 1;
 }
 
 .cart-man {
@@ -356,6 +357,7 @@ li {
     position: absolute;
     top: 29px;
     left: 0;
+    z-index: 1;
     &::before {
         content: "";
         display: block;
@@ -887,14 +889,11 @@ li {
 
 .subscribe__right {
     height: 350px;
-    width: 800px;
-    // position: absolute;
-    padding: 3%;
-    // margin-right: 322px;
-    // margin-left: 692px;
-    border-left: 2px solid $colorWhite;
+    max-width: 50%;
+    /* padding: 3%; */
+    border-left: 2px solid white;
     display: flex;
-    justify-content: center;
+    margin-right: 322px;
 }
 
 .subscribe__left__text__main {
