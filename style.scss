@@ -1100,6 +1100,7 @@ li {
 .upper__footer__right__shop {
     display: flex;
     flex-direction: column;
+    width: 156px;
 }
 
 .upper__footer__right__shop__title {
@@ -1247,7 +1248,7 @@ li {
 .shipping-left {
     display: flex;
     flex-direction: column;
-    padding-left: 230px;
+    padding-left: 130px;
     padding-top: 89px;
     width: 614px;
 }
@@ -1461,7 +1462,7 @@ li {
 }
 
 .shipping-lower {
-    margin-left: 230px;
+    margin-left: 130px;
 }
 
 .billing {
@@ -2043,11 +2044,10 @@ li {
     // margin-bottom: 20px;
 }
 
-.input-with-icon input[type="text"] {
-    // padding-right: 30px;
-    /* Добавляем отступ справа для иконки */
-}
-
+// .input-with-icon input[type="text"] {
+//     // padding-right: 30px;
+//     /* Добавляем отступ справа для иконки */
+// }
 .input-with-icon i {
     position: absolute;
     top: 40%;
