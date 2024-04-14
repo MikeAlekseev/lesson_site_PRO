@@ -271,18 +271,6 @@ li {
   color: white;
 }
 
-.button__account {
-  width: 130px;
-  height: 38px;
-  background-color: #f16d7f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5%;
-  color: #f16d7f;
-  transition: 0.3s;
-}
-
 .white {
   color: white;
 }
@@ -293,17 +281,16 @@ li {
 }
 
 .account__text {
-  font-family: Lato;
-  font-size: 15px;
-  line-height: 32px;
-  font-weight: 400;
-  letter-spacing: 0.025em;
+  padding: 13px 29px 11px 19px;
+  display: flex;
+  background-color: #f16d7f;
   color: white;
-  transition: 0.3s;
+  gap: 8px;
 }
 
 .account__text:active {
   color: #f16d7f;
+  background-color: white;
 }
 
 .basket {
@@ -1703,10 +1690,6 @@ li {
 
 .sort-right {
   display: flex;
-}
-
-.fa-caret-down {
-  margin-left: 21px;
 }
 
 .sort-button {
