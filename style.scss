@@ -882,7 +882,7 @@ li {
 }
 
 .subscribe__right {
-    height: 438px;
+    height: 350px;
     width: 800px;
     position: absolute;
     padding: 3%;
@@ -1797,4 +1797,54 @@ li {
 
 .one {
     color: #ef5b70;
+}
+
+.feature-box {
+    background-color: #222224;
+    display: flex;
+    justify-content: center;
+    gap: 82px;
+    padding-top: 89px;
+    padding-bottom: 114px;
+    &-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 327px;
+    }
+    &-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 327px;
+    }
+    &-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 327px;
+    }
+}
+
+.feature-box-title {
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #fbfbfb;
+    margin-top: 32px;
+    margin-bottom: 15px;
+}
+
+.feature-box-txt {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #fbfbfb;
 }
