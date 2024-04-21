@@ -22,9 +22,10 @@
                 </a>
                 <div class="brand">
                     <a href="index.html">
-                        <p class="brand__bran">BRAN<span class="brand__d">D</span></p>
+                        <h3 class="brand__bran">BRAN<span class="brand__d">D</span></р>
                     </a>
                 </div>
+
             </div>
             <div class="center__upper__header">
                 <div class="center__upper__header__left">
@@ -101,7 +102,7 @@
                     </details>
                 </div>
                 <div class="center__upper__header__search">
-                    <div class="center__upper__header__search__text">Search for Item...</div>
+                    <input class="center__upper__header__search__text" type="text" placeholder="Search for Item...">
                     <div class="center__upper__header__search__loop">
                         <img src="img/loop.png" alt="loop">
                     </div>
@@ -126,7 +127,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <div class="cart-women">
                                 <div class="women-pic">
                                     <img src="img/cart_pic2.png" alt="cartpic2">
@@ -154,12 +155,11 @@
                     </div>
                 </div>
                 <div class="button__account">
-                    <a class="account__text" href="#">My Account <i class="fa fa-solid fa-caret-down white"></i></a>
-
+                    <button class="account__text" type="submit">My Account <i class="fa fa-solid fa-caret-down white"></i></button>
+                    <a href="#"> </a>
                 </div>
             </div>
         </div>
-
         <div class="lower__header container">
             <ul class="lower__header__menu">
                 <li class="menu-list"><a class="lower__header__menu__link" href="">HOME</a>
@@ -689,7 +689,7 @@
                 </li>
         </div>
     </header>
-    <div class="container">
+    <section class="container">
         <div class="breadcrump ">
             <div class="breadcrump-all">
                 <div class="breadcrump-left">
@@ -710,9 +710,9 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="shoppingCart container">
+    </section>
+    <section class="shoppingCart">
+        <div class="container">
             <div class="shoppingCart-title">
                 <div class="shoppingCart-title-left">
                     Product Details
@@ -726,7 +726,7 @@
                 </div>
             </div>
             <div class="shoppingCart-object">
-                <img class="object-img" src="img/shoppingcart_img1.png" alt="prod1">
+                <a href="single.html"><img class="object-img" src="img/shoppingcart_img1.png" alt="prod1"></a>
                 <div class="shoppingCart-txt">
                     <p class="shop-tit">
                         Mango People T-shirt
@@ -738,9 +738,10 @@
                 <div class="unitrice">
                     $150
                 </div>
-                <div class="quantity">
+                <input class="quantity" type="number" min="1">
+                <!-- <div class="quantity">
                     2
-                </div>
+                </div> -->
                 <div class="shipping">
                     free
                 </div>
@@ -752,7 +753,7 @@
                 </div>
             </div>
             <div class="shoppingCart-object">
-                <img class="object-img" src="img/shoppingcart_img2.png" alt="prod2">
+                <a href="single.html"> <img class="object-img" src="img/shoppingcart_img2.png" alt="prod2"></a>
                 <div class="shoppingCart-txt">
                     <p class="shop-tit">
                         Mango People T-shirt
@@ -764,9 +765,7 @@
                 <div class="unitrice">
                     $150
                 </div>
-                <div class="quantity">
-                    2
-                </div>
+                <input class="quantity" type="number" min="1">
                 <div class="shipping">
                     free
                 </div>
@@ -778,7 +777,7 @@
                 </div>
             </div>
             <div class="shoppingCart-object">
-                <img class="object-img" src="img/shoppingcart_img3.png" alt="prod3">
+                <a href="single.html"><img class="object-img" src="img/shoppingcart_img3.png" alt="prod3"></a>
                 <div class="shoppingCart-txt">
                     <p class="shop-tit">
                         Mango People T-shirt
@@ -790,9 +789,7 @@
                 <div class="unitrice">
                     $150
                 </div>
-                <div class="quantity">
-                    2
-                </div>
+                <input class="quantity" type="number" min="1">
                 <div class="shipping">
                     free
                 </div>
@@ -811,27 +808,42 @@
                     <a class="button-right" href="#">cONTINUE sHOPPING</a>
                 </div>
             </div>
-            <div class="data">
-                <div class="data-left">
+            <div class="data" action="#" method="POST">
+                <form class="data-left">
                     <p class="data-title">
                         Shipping Adress
                     </p>
                     <div class="input-with-icon">
-                        <input class="data-enter" type="text" placeholder="Bangladesh">
-                        <i class="fa fa-solid fa-caret-down white"></i>
+                        <details>
+                            <summary>
+                                <div class="country__sort">
+                                    <input class="data-enter" type="text" placeholder="Bangladesh" required>
+                                    <i class="fa fa-solid fa-caret-up white data-open"></i>
+                                    <i class="fa fa-solid fa-caret-down white data-closed"></i>
+                                </div>
+                            </summary>
+                            <ul class="countries">
+                                <li><a class="countries__link" href="#">Bangladesh</a></li>
+                                <li><a class="countries__link" href="#">England</a></li>
+                                <li><a class="countries__link" href="#">Moscow</a></li>
+                                <li><a class="countries__link" href="#">Chinases</a></li>
+                                <li><a class="countries__link" href="#">Minsk</a></li>
+                            </ul>
+                        </details>
                     </div>
-                    <input class="data-enter" type="text" placeholder="State">
-                    <input class="data-enter" type="text" placeholder="Postcode / Zip">
-                    <a class="data-button" href="#">get a quote</a>
-                </div>
-                <div class="data-center">
+                    <input class="data-enter" type="text" placeholder="State" required>
+                    <input class="data-enter" type="text" placeholder="Postcode / Zip" required>
+                    <button class="data-button" type="submit">get a quote</button>
+                </form>
+                <form class="data-center">
                     <p class="data-title">
                         coupon discount
                     </p>
                     <p class="data-txt">Enter your coupon code if you have one</p>
-                    <input class="data-enter" type="text" placeholder="State">
-                    <a class="data-button" href="#">Apply coupon</a>
-                </div>
+                    <input class="data-enter" type="text" placeholder="State" required>
+                    <button class="data-button" type="submit">Apply coupon</button>
+                    <!-- <a class="data-button" href="#">Apply coupon</a> -->
+                </form>
                 <div class="data-right">
                     <div class="data-subtitle">
                         Sub total $900
@@ -840,15 +852,16 @@
                         GRAND TOTAL <span class="red-word">$900</span>
                     </div>
                     <div class="data-line"></div>
-                    <a class="data-grand-button" href="#">proceed to checkout</a>
+                    <button class="data-grand-button" type="submit">proceed to checkout</button>
+                    <!-- <a class="data-grand-button" href="#">proceed to checkout</a> -->
                 </div>
             </div>
         </div>
-    </div>
-    <div class="subscribe container">
-        <div class="subscribe__left">
-            <img src="img/chicks.png" alt="">
-            <div class="subscribe__left__text">
+    </section>
+    <section class="subscribe container">
+        <figure class="subscribe__left">
+            <img class="chicks" src="img/chicks.png" alt="chicks">
+            <figcaption class="subscribe__left__text">
                 <div class="subscribe__left__text__main">
                     “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
                 </div>
@@ -863,8 +876,8 @@
                     <img src="img/line_pink.png" alt="line__pink">
                     <img src="img/line_white.png" alt="line__white">
                 </div>
-            </div>
-        </div>
+            </figcaption>
+        </figure>
         <div class="subscribe__right">
             <div class="footer_middle_right">
                 <h1 class="footer_middle_right_header">
@@ -874,12 +887,13 @@
                     FOR OUR NEWLETTER AND PROMOTION
                 </p>
             </div>
-            <div class="footer_middle_right_form" action="#">
-                <input class="footer_middle_right_form_input" type="text" placeholder="Enter your email">
-                <a class="footer_middle_right_form_button_text" href="#">Subsribe</a>
-            </div>
+            <form class="footer_middle_right_form" action="#" method="POST">
+                <!-- <input class="footer_middle_right_form_input" type="text" placeholder="Enter your email"> -->
+                <input class="footer_middle_right_form_input" type="email" id="email" name="email" required placeholder="Enter your email">
+                <button class="footer_middle_right_form_button_text" type="submit">Subsribe</button>
+            </form>
         </div>
-    </div>
+    </section>
     <footer>
         <div class="container">
             <div class="upper__footer">

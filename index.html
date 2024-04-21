@@ -23,7 +23,7 @@
                 </a>
                 <div class="brand">
                     <a href="index.html">
-                        <p class="brand__bran">BRAN<span class="brand__d">D</span></p>
+                        <h3 class="brand__bran">BRAN<span class="brand__d">D</span></р>
                     </a>
                 </div>
 
@@ -156,8 +156,8 @@
                     </div>
                 </div>
                 <div class="button__account">
-                    <a class="account__text" href="#">My Account <i class="fa fa-solid fa-caret-down white"></i></a>
-
+                    <button class="account__text" type="submit">My Account <i class="fa fa-solid fa-caret-down white"></i></button>
+                    <a href="#"> </a>
                 </div>
             </div>
         </div>
@@ -693,7 +693,7 @@
     </header>
     <section class="slider container">
         <div class="slider__text" style="width: 93%;">
-            <img src="img/border.png" alt="border">
+            <img class="border__img" src="img/border.png" alt="border">
             <div class="text__brand">
                 <h1 class="title">
                     THE BRAND
@@ -928,39 +928,39 @@
                         <img src="img/feature__crown.png" alt="feat__crown">
                     </div>
                     <div class="feature__text">
-                        <div class="feature__text__container1">
-                            <div class="feature__title">
+                        <article class="feature__text__container1">
+                            <h2 class="feature__title">
                                 Free Delivery
-                            </div>
-                            <div class="feature__text">
+                            </h2>
+                            <p class="feature__text">
                                 Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-                            </div>
-                        </div>
-                        <div class="feature__text__container2">
-                            <div class="feature__title">
+                            </p>
+                        </article>
+                        <article class="feature__text__container2">
+                            <h2 class="feature__title">
                                 Sales & discounts
-                            </div>
-                            <div class="feature__text">
+                            </h2>
+                            <p class="feature__text">
                                 Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-                            </div>
-                        </div>
-                        <div class="feature__text__container3">
-                            <div class="feature__title">
+                            </p>
+                        </article>
+                        <article class="feature__text__container3">
+                            <h2 class="feature__title">
                                 Quality assurance
-                            </div>
-                            <div class="feature__text">
+                            </h2>
+                            <p class="feature__text">
                                 Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-                            </div>
-                        </div>
+                            </p>
+                        </article>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="subscribe container">
-        <div class="subscribe__left">
-            <img src="img/chicks.png" alt="">
-            <div class="subscribe__left__text">
+        <figure class="subscribe__left">
+            <img class="chicks" src="img/chicks.png" alt="chicks">
+            <figcaption class="subscribe__left__text">
                 <div class="subscribe__left__text__main">
                     “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
                 </div>
@@ -975,8 +975,8 @@
                     <img src="img/line_pink.png" alt="line__pink">
                     <img src="img/line_white.png" alt="line__white">
                 </div>
-            </div>
-        </div>
+            </figcaption>
+        </figure>
         <div class="subscribe__right">
             <div class="footer_middle_right">
                 <h1 class="footer_middle_right_header">
@@ -986,10 +986,11 @@
                     FOR OUR NEWLETTER AND PROMOTION
                 </p>
             </div>
-            <div class="footer_middle_right_form" action="#">
-                <input class="footer_middle_right_form_input" type="text" placeholder="Enter your email">
-                <a class="footer_middle_right_form_button_text" href="#">Subsribe</a>
-            </div>
+            <form class="footer_middle_right_form" action="#" method="POST">
+                <!-- <input class="footer_middle_right_form_input" type="text" placeholder="Enter your email"> -->
+                <input class="footer_middle_right_form_input" type="email" id="email" name="email" required placeholder="Enter your email">
+                <button class="footer_middle_right_form_button_text" type="submit">Subsribe</button>
+            </form>
         </div>
     </section>
     <footer>

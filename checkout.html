@@ -22,9 +22,10 @@
                 </a>
                 <div class="brand">
                     <a href="index.html">
-                        <p class="brand__bran">BRAN<span class="brand__d">D</span></p>
+                        <h3 class="brand__bran">BRAN<span class="brand__d">D</span></р>
                     </a>
                 </div>
+
             </div>
             <div class="center__upper__header">
                 <div class="center__upper__header__left">
@@ -126,7 +127,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <div class="cart-women">
                                 <div class="women-pic">
                                     <img src="img/cart_pic2.png" alt="cartpic2">
@@ -141,11 +142,9 @@
                                 </div>
                             </div>
                         </a>
-
                         <div class="cart-total">
                             <div class="total">TOTAL</div>
                             <div class="500">$500.00</div>
-
                         </div>
                         <a class="checkout-button" href="checkout.html">
                             <p class="checkout-txt">checkout</p>
@@ -156,8 +155,8 @@
                     </div>
                 </div>
                 <div class="button__account">
-                    <a class="account__text" href="#">My Account <i class="fa fa-solid fa-caret-down white"></i></a>
-
+                    <button class="account__text" type="submit">My Account <i class="fa fa-solid fa-caret-down white"></i></button>
+                    <a href="#"> </a>
                 </div>
             </div>
         </div>
@@ -691,7 +690,7 @@
                 </li>
         </div>
     </header>
-    <div class="container">
+    <section class="container">
         <div class="breadcrump ">
             <div class="breadcrump-all">
                 <div class="breadcrump-left">
@@ -713,11 +712,10 @@
 
             </div>
         </div>
-    </div>
-    <div class="container">
+    </section>
+    <section class="container">
         <div class="shipping">
             <div class="shipping-upper">
-
                 <details open>
                     <summary>
                         <div class="shipping-title">
@@ -725,7 +723,7 @@
                         </div>
                     </summary>
                     <div class="shipping-all">
-                        <div class="shipping-main">
+                        <form class="shipping-main" action="#" method="POST">
                             <div class="string1">
                                 Check as a guest or register
                             </div>
@@ -747,7 +745,6 @@
                                 </div>
                             </div>
                             <div class="string4">
-
                             </div>
                             <div class="string5">
                                 register and save time!
@@ -759,13 +756,11 @@
                                 <p><i class="fa fa-solid fa-angles-right"></i> Fast and easy checkout Easy access to your order history and status</p>
                                 <p><i class="fa fa-solid fa-angles-right"></i>Easy access to your order history and status</p>
                             </div>
-                            <div class="shipping-button">
-                                <p class="shipping-button-txt">
-                                    Continue
-                                </p>
-                            </div>
-                        </div>
-                        <form class="shipping-right">
+                            <button class="shipping-button" type="submit">
+                                Continue
+                            </button>
+                        </form>
+                        <form class="shipping-right" action="#" method="POST">
                             <div class="right-string1">
                                 Already registed?
                             </div>
@@ -775,18 +770,18 @@
                             <div class="right-string3">
                                 <p class="email-txt">EMAIL ADDRESS <span class="red-star">*</span>
                                 </p>
-                                <input class="email-box" type="email" required>
+                                <input class="email-box" type="email" id="email" name="email" required>
+                                <!-- <input class="email-box" type="email" required> -->
                                 <p class="email-txt">PASSWORD <span class="red-star">*</span>
                                 </p>
-                                <input class="email-box" type="password" required>
+                                <input class="email-box" type="password" id="password" name="password" required>
+                                <!-- <input class="email-box" type="password" required> -->
                                 <p class="Fileds">* Required Fileds</p>
                             </div>
                             <div class="right-string4">
-                                <div class="shipping-button">
-                                    <p class="shipping-button-txt">
-                                        Log in
-                                    </p>
-                                </div>
+                                <button class="shipping-button" type="submit">
+                                    Log in
+                                </button>
                                 <a class="pass" href="#">Forgot Password ?</a>
                             </div>
                         </form>
@@ -812,11 +807,11 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="subscribe container">
-        <div class="subscribe__left">
-            <img src="img/chicks.png" alt="">
-            <div class="subscribe__left__text">
+    </section>
+    <section class="subscribe container">
+        <figure class="subscribe__left">
+            <img class="chicks" src="img/chicks.png" alt="chicks">
+            <figcaption class="subscribe__left__text">
                 <div class="subscribe__left__text__main">
                     “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
                 </div>
@@ -831,8 +826,8 @@
                     <img src="img/line_pink.png" alt="line__pink">
                     <img src="img/line_white.png" alt="line__white">
                 </div>
-            </div>
-        </div>
+            </figcaption>
+        </figure>
         <div class="subscribe__right">
             <div class="footer_middle_right">
                 <h1 class="footer_middle_right_header">
@@ -842,12 +837,13 @@
                     FOR OUR NEWLETTER AND PROMOTION
                 </p>
             </div>
-            <div class="footer_middle_right_form" action="#">
-                <input class="footer_middle_right_form_input" type="text" placeholder="Enter your email">
-                <a class="footer_middle_right_form_button_text" href="#">Subsribe</a>
-            </div>
+            <form class="footer_middle_right_form" action="#" method="POST">
+                <!-- <input class="footer_middle_right_form_input" type="text" placeholder="Enter your email"> -->
+                <input class="footer_middle_right_form_input" type="email" id="email" name="email" required placeholder="Enter your email">
+                <button class="footer_middle_right_form_button_text" type="submit">Subsribe</button>
+            </form>
         </div>
-    </div>
+    </section>
     <footer>
         <div class="container">
             <div class="upper__footer">
